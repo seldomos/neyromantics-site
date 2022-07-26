@@ -1,5 +1,5 @@
 const menuItems = document.querySelectorAll(".navlink")
-const itemsActivity = document.querySelectorAll('.activity')
+const itemsActivity = document.querySelectorAll(".activity")
 const nextBtns = document.querySelectorAll(".next-btn")
 
 function setActiveMenuItem(activity) {
@@ -7,7 +7,7 @@ function setActiveMenuItem(activity) {
         if (item.getAttribute("activity") == activity) {
             item.classList.add("active")
         } else {
-            item.classList.remove("active")
+            item.classList.remove("active")                
         }
     })
     menuItems.forEach((item) => {
@@ -33,3 +33,36 @@ nextBtns.forEach((btn) => {
         setActiveMenuItem(activity)
     })
 })
+
+
+// beta
+const names = document.querySelectorAll(".card-name")
+const cards = document.querySelectorAll(".card-body")
+names.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+        const cardId = item.getAttribute("id")
+        cards.forEach((card) => {
+            if (card.getAttribute("id") == cardId) {
+                card.style.height = "100px"
+            } else {
+                card.style.height = "0"
+            }
+        })
+    })
+    item.addEventListener("mouseout", () => {
+        // const cardId = item.getAttribute("id")
+        cards.forEach((card) => {
+            card.style.height = "0"
+        })
+    })
+})
+
+// beta cursor
+const cursor = document.querySelector(".cursor")
+const moveCursor = (e) => {
+    const Y = e.clientY
+    const X = e.clientX
+    cursor.style.transform = `translate3d(${X}px, ${Y}px, 0)`
+}
+
+window.addEventListener("mousemove", moveCursor)
