@@ -43,11 +43,12 @@ body {
   align-items: center;
   opacity: 1;
   transform: scale(1);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  flex-direction: column;
 }
 .loader h1 {
-  -webkit-animation: loader 0.5s ease-in-out infinite;
-          animation: loader 0.5s ease-in-out infinite;
+  -webkit-animation: loader 0.25s ease-in-out infinite;
+          animation: loader 0.25s ease-in-out infinite;
 }
 .loader.not-active {
   transform: scale(2);
@@ -104,7 +105,7 @@ nav {
 nav ul li {
   margin: 4px 0;
   padding: 8px 8px 8px 12px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
   border-radius: 8px;
   position: relative;
   list-style: none;
@@ -121,7 +122,7 @@ nav ul li:before {
   opacity: 0;
   background: #ff1865;
   border-radius: 2px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 nav ul li:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -153,8 +154,8 @@ nav ul li.active:before {
   display: inherit;
 }
 .screen .activity.active {
-  -webkit-animation: switchScreenOn 0.5s ease-in-out;
-          animation: switchScreenOn 0.5s ease-in-out;
+  -webkit-animation: switchScreenOn 0.25s ease-in-out;
+          animation: switchScreenOn 0.25s ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   display: block;
@@ -184,21 +185,42 @@ nav ul li.active:before {
   right: 16px;
 }
 
-.our-comand span {
-  text-transform: uppercase;
-  transition: all 0.5s ease-in-out;
-  font-size: 1.5rem;
+.our-comand {
+  display: flex;
+  margin-top: 16px;
+}
+.our-comand .names {
+  width: 50%;
+}
+.our-comand .names li {
+  list-style: none;
+  padding: 8px;
+  border-radius: 8px;
   margin-right: 16px;
 }
-.our-comand span:hover {
-  color: #ff1865;
+.our-comand .names li p {
+  font-size: 36px;
 }
-.our-comand .card-body {
-  width: 100px;
-  height: 0px;
-  background: red;
+.our-comand .names li.active {
+  background: rgba(255, 255, 255, 0.1);
+}
+.our-comand .info {
+  width: 50%;
+}
+.our-comand .info .info-block {
+  display: none;
+}
+.our-comand .info .info-block img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+}
+.our-comand .info .info-block.active {
   display: block;
-  transition: all 0.5s ease-in-out;
 }
 
 @-webkit-keyframes switchScreenOn {

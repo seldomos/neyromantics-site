@@ -1,22 +1,20 @@
-// beta
-const names = document.querySelectorAll(".card-name")
-const cards = document.querySelectorAll(".card-body")
+const names = document.querySelectorAll(".name")
+const blocks = document.querySelectorAll(".info-block")
 
 names.forEach((item) => {
-    item.addEventListener("mouseover", () => {
-        const cardId = item.getAttribute("id")
-        cards.forEach((card) => {
-            if (card.getAttribute("id") == cardId) {
-
-            } else {
-
-            }
+    item.addEventListener("click", () => {
+        names.forEach((name) => {
+            name.classList.remove("active")
+            blocks.forEach((block) => {
+                block.classList.remove("active")
+            })
         })
-    })
-    item.addEventListener("mouseout", () => {
-        // const cardId = item.getAttribute("id")
-        cards.forEach((card) => {
-
+        const id = item.getAttribute("id")
+        blocks.forEach((block) => {
+            if (block.getAttribute("id") == id) {
+                block.classList.add("active")
+                item.classList.add("active")
+            }
         })
     })
 })

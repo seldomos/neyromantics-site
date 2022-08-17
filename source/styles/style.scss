@@ -1,6 +1,6 @@
 $primary: #ff1865;
 $dark: #121212;
-$anim: .5s ease-in-out;
+$anim: .25s ease-in-out;
 
 @font-face {
     font-family: "Roboto Flex";
@@ -50,9 +50,8 @@ body {
     opacity: 1;
     transform: scale(1);
     transition: all $anim;
-    h1 {
-        animation: loader $anim infinite;
-    }
+    flex-direction: column;
+    h1 { animation: loader $anim infinite; }
     &.not-active {
         transform: scale(2);
         opacity: 0;
@@ -176,22 +175,87 @@ nav {
     }
 }
 
+// .our-comand {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     column-gap: 16px;
+//     row-gap: 16px;
+//     border-radius: 16px;
+//     height: calc(100% - 88px);
+//     overflow-y: auto;
+//     margin: 16px 0;
+//     &::-webkit-scrollbar {
+//         display: none;
+//     }
+//     .card {
+//         width: 100%;
+//         height: 350px;
+//         border-radius: 16px;
+//         background: lighten($dark, 5%);
+//         display: block;
+//         transition: all $anim;
+//         position: relative;
+//         img {
+//             height: 100%;
+//             width: 100%;
+//             border-radius: 16px;
+//             object-fit: cover;
+//             object-position: top;
+//         }
+//         p {
+//             transition: all $anim;
+//             position: absolute;
+//             bottom: 0;
+//             left: 0;
+//             width: 100%;
+//             padding: 16px;
+//             font-size: 24px;
+//             background: lighten($dark, 10%);
+//             border-radius: 0 0 16px 16px;
+//         }
+//         &:hover {
+//             p {
+//                 background: $primary;
+//             }
+
+//         }
+//     }
+// }
+
 .our-comand {
-    span {
-        text-transform: uppercase;
-        transition: all $anim;
-        font-size: 1.5rem;
-        margin-right: 16px;
-        &:hover {
-            color: $primary;
+    display: flex;
+    margin-top: 16px;
+    .names {
+        width: 50%;
+        li {
+            list-style: none;
+            padding: 8px;
+            border-radius: 8px;
+            margin-right: 16px;
+            p {
+                font-size: 36px;
+            }
+            &.active {
+                background: rgba(white, .1);
+
+            }
         }
     }
-    .card-body {
-        width: 100px;
-        height: 0px;
-        background: red;
-        display: block;
-        transition: all $anim;
+    .info {
+        width: 50%;
+        .info-block {
+            display: none;
+            img {
+                object-fit: cover;
+                object-position: center;
+                width: 256px;
+                height: 256px;
+                border-radius: 50%;
+            }
+            &.active {
+                display: block;
+            }
+        }
     }
 }
 
