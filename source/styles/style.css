@@ -7,9 +7,9 @@
   src: url("../fonts/Hyperwave.otf") format("opentype");
 }
 a {
-  color: #ff1865;
+  color: #ff1818;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 a:hover {
   cursor: none;
@@ -26,6 +26,7 @@ body {
   color: white;
   cursor: none;
   overflow: hidden;
+  height: 100vh;
 }
 
 .loader {
@@ -63,25 +64,32 @@ body {
 }
 
 p, span, h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto Flex", sans-serif;
+  font-family: 'Unbounded', cursive;
+}
+
+
+h2 {
+  font-size: 64px;
+  letter-spacing: 4px;
+  font-weight: 1000;
 }
 
 h1.title {
-  text-transform: uppercase;
-  font-size: 48px;
-  letter-spacing: 8px;
+  
+  font-size: 96px;
+  letter-spacing: 4px;
   font-weight: 1000;
 }
 h1.title.style {
-  font-size: 64px;
-  color: #ff1865;
-  font-family: "Hyperwave", sans-serif;
+  font-size: 120px;
+  color: #ff1818;
+  font-family: 'Monoton', cursive;
 }
 
 .cursor {
   width: 24px;
   height: 24px;
-  border: 2px solid #ff1865;
+  border: 2px solid #ff1818;
   border-radius: 100%;
   position: absolute;
   z-index: 666666;
@@ -120,7 +128,7 @@ nav ul li:before {
   height: calc(100% - 12px);
   width: 4px;
   opacity: 0;
-  background: #ff1865;
+  background: #ff1818;
   border-radius: 2px;
   transition: all 0.25s ease-in-out;
 }
@@ -172,8 +180,8 @@ nav ul li.active:before {
 
 .btn {
   padding: 8px 16px;
-  border: 2px solid #ff1865;
-  font-family: "Roboto Flex", sans-serif;
+  border: 2px solid #ff1818;
+  font-family: 'Mulish', sans-serif;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -199,6 +207,7 @@ nav ul li.active:before {
   margin-right: 16px;
 }
 .our-comand .names li p {
+  
   font-size: 36px;
 }
 .our-comand .names li.active {
