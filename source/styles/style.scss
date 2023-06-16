@@ -1,4 +1,4 @@
-$primary: #ff1865;
+$primary: #ff1818;
 $dark: #121212;
 $anim: .25s ease-in-out;
 
@@ -64,22 +64,29 @@ body {
 .wrap { display: flex; }
 
 p, span, h1, h2, h3, h4, h5, h6 {
-    font-family: "Roboto Flex", sans-serif;
+    font-family: 'Unbounded', cursive;
 }
 
 h1 {
     &.title {
-        text-transform: uppercase;
-        font-size: 48px;
-        letter-spacing: 8px;
+
+        font-size: 64px;
+        letter-spacing: 4px;
         font-weight: 1000;
         &.style {
             font-size: 64px;
             color: $primary;
-            font-family: "Hyperwave", sans-serif;
+            font-family: 'Unbounded', cursive;
         }
     }
 }
+
+h2 {
+    font-size: 96px;
+    letter-spacing: 4px;
+    font-weight: 1000;
+  }
+  
 
 .cursor {
     width: 24px;
@@ -163,7 +170,7 @@ nav {
 .btn {
     padding: 8px 16px;
     border: 2px solid $primary;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Mulish', sans-serif;
     border-radius: 8px;
     display: flex;
     justify-content: center;
