@@ -1,0 +1,50 @@
+section#about {
+
+}
+
+section#about > div.person {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: none;
+}
+
+section#about > div > div.info {
+	margin-left: 95px;
+}
+
+section#about > div > img.photo {
+	width: 500px;
+	height: 500px;
+	border-radius: 120px;
+	object-fit: cover;
+}
+
+section#about > div > div.info > h1.name {
+	margin-bottom: 40px;
+	font-size: 2rem;
+	color: white;
+	font-family: "Unbounded", sans-serif;
+}
+
+section#about > div > div.info > p.info {
+	font-size: 1.2rem;
+}
+
+section#about > div.person.show {
+	display: flex;
+}
+
+@media only screen and (max-width: 1024px) {
+	section#about > div.person.show {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	section#about > div > img.photo {
+		width: 250px;
+		height: 250px;
+		border-radius: 16px;
+		object-fit: cover;
+	}
+}
