@@ -15,7 +15,7 @@ section#about > div > div.info {
 section#about > div > img.photo {
 	width: 500px;
 	height: 500px;
-	border-radius: 120px;
+	border-radius: 60px;
 	object-fit: cover;
 }
 
