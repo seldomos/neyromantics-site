@@ -31,7 +31,7 @@ for (let i = navButtons[0].children.length - 1; i >= 0; i--) {
 				hideAllPersons(allPersonBlocks)
 				allPersonBlocks[selectedId].classList.add('show')
 			} catch(e) {
-				selectedId = 0
+				selectedId = allPersonBlocks.length - 1
 				hideAllPersons(allPersonBlocks)
 				allPersonBlocks[selectedId].classList.add('show')
 			}
