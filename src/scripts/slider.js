@@ -10,7 +10,6 @@ function hideAllPersons(persons) {
 		block.classList.remove('show')
 	})
 }
-console.log(navButtons[0].children)
 for (let i = navButtons[0].children.length - 1; i >= 0; i--) {
 	let button = navButtons[0].children[i]
 	button.addEventListener('click', () => {
