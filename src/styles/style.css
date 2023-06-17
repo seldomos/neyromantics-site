@@ -7,6 +7,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: auto;
+}
+
 body {
 	background: #121212;
 }
@@ -42,6 +46,7 @@ section#welcome > .sub-heading > span {
 
 h1.section-title {
 	font-size: 4rem;
+	margin-top: 10vh;
 }
 
 /* Стили для каждой секции  */
@@ -152,6 +157,34 @@ section > .row > .navigation-buttons > p:hover {
 	}
 }
 
+/* Navigation  */
+nav {
+	background: rgba(0, 0, 0, .5);
+	z-index: 100;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	backdrop-filter: blur(8px);
+/*	top: 16px;
+	left: 16px;*/
+}
+
+nav > a {
+	color: white;
+	text-decoration: none;
+	padding: 16px;
+	font-family: "Mulish", sans-serif;
+}
+
+nav > .logo {
+	color: red;
+	padding: 16px;
+	font-family: "Unbounded";
+}
+
+/* Animations  */
 @keyframes jump {
 	from {
 		transform: translateY(-8px);
