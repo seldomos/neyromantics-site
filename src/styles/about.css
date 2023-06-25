@@ -34,6 +34,16 @@ section#team > div.person.show {
 	display: flex;
 }
 
+section#team > div > div.info > div.skills {
+	margin-top: 20px;
+}
+
+section#team > div > div.info > div.skills > img.badge {
+	border-color: white;
+	border-radius: 8px;
+	border: 1px solid #9f9f9f;
+}
+
 @media only screen and (max-width: 1024px) {
 	section#team > div.person.show {
 		display: flex;
