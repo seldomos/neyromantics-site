@@ -46,7 +46,6 @@ section#welcome > .sub-heading > span {
 
 h1.section-title {
 	font-size: 4rem;
-	/* margin-top: 10vh; */
 }
 
 /* Стили для каждой секции  */
@@ -124,7 +123,6 @@ section > .grid > .block.small {
     justify-content: center;
 }
 
-/* Слайдер о команде */
 section > .row {
 	display: flex;
 	align-items: center;
@@ -232,9 +230,6 @@ nav > .logo {
 		width: calc(100vw - 64px);
 		height: auto;
 	}
-}
-
-@media only screen and (max-width: 768px) {
 	.row {
 		padding-left: 16px!important;
 		padding-right: 16px!important;
@@ -247,36 +242,13 @@ nav > .logo {
 		font-size: 1.5rem;
 		margin-top: 16px;
 	}
-
-	/* Navigation  */
-	/* nav {
-		background: rgba(0, 0, 0, .5);
-		z-index: 100;
-		width: 100%;
-		display: flex;
-		position: fixed;
-		top: 0;
-		left: 0;
-		backdrop-filter: blur(8px);
-	}
-	nav > a {
-		color: white;
-		text-decoration: none;
-		padding: 16px;
-		font-family: "Mulish", sans-serif;
-		transition: all .25s ease-in-out;
-	}
-	nav > a:hover {
-	/*	color: red;*/
-		transform: translateY(-4px);
-	}
-	nav > .logo {
-		color: red;
-		padding: 16px;
-		font-family: "Unbounded";
-	} */
 }
 
+@media only screen and (max-width: 768px) {
+	h1.section-title {
+		font-size: 1.2rem;
+	}
+} 
 
 /* Animations  */
 @keyframes jump {
