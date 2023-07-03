@@ -31,13 +31,14 @@ section#team > div.person.show {
 }
 
 section#team > div > div.info > div.skills {
-	margin-top: 20px;
+	margin-top: 24px;
 }
 
 section#team > div > div.info > div.skills > img.badge {
 	border-color: white;
 	border-radius: 8px;
 	border: 1px solid #9f9f9f;
+	margin: 4px;
 }
 
 @media only screen and (max-width: 1024px) {
