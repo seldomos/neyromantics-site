@@ -48,3 +48,22 @@ section#team > div.person.show {
 		object-fit: cover;
 	}
 }
+
+@media only screen and (max-width: 768px) {
+	section#team > div.person {
+		margin-top: -16spx;
+	}
+	section#team > div > div.info {
+		margin: 0 16px;
+	}
+	section#team > div > div.info > h1.name {
+		margin-top: 24px;
+		font-size: 1.5rem;
+		color: white;
+		font-family: "Unbounded", sans-serif;
+	}
+	section#team > div > div.info > p.info {
+		font-size: 1rem;
+		margin-top: -24px;
+	}
+}
