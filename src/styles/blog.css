@@ -1,90 +1,64 @@
-section#blog .row .navigation-buttons {
-    display: flex;
-  }
-  section#blog .row .navigation-buttons p {
-    padding: 16px;
-    cursor: pointer;
-    transition: all 0.25s ease-in-out;
-    border-radius: 16px;
-  }
-  section#blog .row .navigation-buttons p:hover {
-    transform: translateY(-4px);
-    background: rgba(255, 255, 255, 0.2);
-  }
-  section#blog .post {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: none;
-  }
-  section#blog .post.show {
-    display: flex;
-  }
-  section#blog .info {
-    margin-left: 32px;
-  }
-  section#blog .info h1.name {
-    margin-bottom: 40px;
-    font-size: 2rem;
-    color: white;
-    font-family: "Unbounded", sans-serif;
-  }
-  section#blog .info p.info {
-    font-size: 1.2rem;
-  }
-  section#blog .info .skills {
-    margin-top: 24px;
-  }
-  section#blog .info .skills img.badge {
-    border-color: white;
-    border-radius: 8px;
-    border: 1px solid #9f9f9f;
-  }
-  section#blog img.photo {
-    width: 500px;
-    height: 500px;
-    border-radius: 60px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  @media only screen and (max-width: 1024px) {
-    section#blog .post {
-      max-width: 90%;
-    }
-    section#blog .post h1.name {
-      margin-bottom: 16px;
-      font-size: 24px;
-    }
-    section#blog .post p.info {
-      font-size: 0.8rem;
-    }
-    section#blog img.photo {
-      width: 300px;
-      height: 300px;
-      border-radius: 16px;
-      margin-bottom: 32px;
-    }
-  }
-  @media only screen and (max-width: 768px) {
-    section#blog .post {
-      flex-direction: column;
-      align-items: center;
-    }
-    section#blog .info {
-      margin-left: 0;
-    }
-  }
-  @media only screen and (max-width: 425px) {
-    section#blog .post {
-      max-width: 100%;
-      margin: 0 16px;
-    }
-    section#blog .info .skills {
-      margin-top: 12px;
-    }
-    section#blog .row .navigation-buttons p {
-      padding: 8px;
-      font-size: 0.8rem;
-      border-radius: 4px;
-    }
-  }/*# sourceMappingURL=about.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap");
+
+
+section#blog {
+	font-family: 'Mulish', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 0 50px;
+}
+
+section#blog #app {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 100%;
+	width: 1020px;
+}
+
+section#blog .project {
+	border-radius: 5px;
+	color: #333;
+	display: flex;
+	font-size: 18px;
+	font-weight: bold;
+	flex-direction: column;
+	text-align: center;
+	margin: 20px;
+	width: 300px;
+	text-decoration: none;
+	transition: 0.3s ease;
+}
+
+section#blog .project:hover {
+	background-color: #f0f0f0;
+	transform: scale(1.05);
+}
+
+section#blog .project img {
+	border-radius: 5px;
+	max-width: 100%;
+}
+
+section#blog .floating-text {
+	background-color: #001F61;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	font-family: 'Muli';
+	padding: 7px 15px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	z-index: 998;
+}
+
+section#blog .floating-text a {
+	color: #FF7500;
+	text-decoration: none;
+}
