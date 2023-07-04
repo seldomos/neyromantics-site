@@ -75,22 +75,17 @@ section#team img.photo {
     margin-left: 0;
   }
 }
-
-@media only screen and (max-width: 768px) {
-	section#team > div.person {
-		margin-top: -16spx;
-	}
-	section#team > div > div.info {
-		margin: 0 16px;
-	}
-	section#team > div > div.info > h1.name {
-		margin-top: 24px;
-		font-size: 1.5rem;
-		color: white;
-		font-family: "Unbounded", sans-serif;
-	}
-	section#team > div > div.info > p.info {
-		font-size: 1rem;
-		margin-top: -24px;
-	}
-}
+@media only screen and (max-width: 425px) {
+  section#team .person {
+    max-width: 100%;
+    margin: 0 16px;
+  }
+  section#team .info .skills {
+    margin-top: 12px;
+  }
+  section#team .row .navigation-buttons p {
+    padding: 8px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+  }
+}/*# sourceMappingURL=about.css.map */
