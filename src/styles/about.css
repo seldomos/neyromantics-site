@@ -1,52 +1,79 @@
-section#team {
-
+section#team .row .navigation-buttons {
+  display: flex;
 }
-
-section#team > div.person {
-	max-width: 1200px;
-	margin: 0 auto;
-	display: none;
+section#team .row .navigation-buttons p {
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  border-radius: 16px;
 }
-
-section#team > div > div.info {
-	margin-left: 95px;
+section#team .row .navigation-buttons p:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.2);
 }
-
-section#team > div > img.photo {
-	width: 500px;
-	height: 500px;
-	border-radius: 60px;
-	object-fit: cover;
+section#team .person {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: none;
 }
-
-section#team > div > div.info > h1.name {
-	margin-bottom: 40px;
-	font-size: 2rem;
-	color: white;
-	font-family: "Unbounded", sans-serif;
+section#team .person.show {
+  display: flex;
 }
-
-section#team > div > div.info > p.info {
-	font-size: 1.2rem;
+section#team .info {
+  margin-left: 32px;
 }
-
-section#team > div.person.show {
-	display: flex;
+section#team .info h1.name {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: white;
+  font-family: "Unbounded", sans-serif;
+}
+section#team .info p.info {
+  font-size: 1.2rem;
+}
+section#team .info .skills {
+  margin-top: 24px;
+}
+section#team .info .skills img.badge {
+  border-color: white;
+  border-radius: 8px;
+  border: 1px solid #9f9f9f;
+  margin: 2px;
+}
+section#team img.photo {
+  width: 500px;
+  height: 500px;
+  border-radius: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (max-width: 1024px) {
-	section#team > div.person.show {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-	}
-	section#team > div > img.photo {
-		width: 250px;
-		height: 250px;
-		border-radius: 16px;
-		object-fit: cover;
-	}
+  section#team .person {
+    max-width: 90%;
+  }
+  section#team .person h1.name {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+  section#team .person p.info {
+    font-size: 0.8rem;
+  }
+  section#team img.photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 16px;
+    margin-bottom: 32px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  section#team .person {
+    flex-direction: column;
+    align-items: center;
+  }
+  section#team .info {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {

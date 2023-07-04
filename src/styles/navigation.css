@@ -1,0 +1,26 @@
+nav {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  font-family: "Mulish", sans-serif;
+  transition: all 0.25s ease-in-out;
+}
+nav a:hover {
+  transform: translateY(-4px);
+}
+nav .logo {
+  color: red;
+  padding: 16px;
+  font-family: "Unbounded";
+}/*# sourceMappingURL=navigation.css.map */
