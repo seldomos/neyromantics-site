@@ -19,6 +19,30 @@ nav a {
 nav a:hover {
   transform: translateY(-4px);
 }
+
+nav .iksweb {
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer; 
+  font-size: 14px;
+  text-decoration: none;
+  padding: 15px 20px; 
+  color: #ffffff;
+  background: #090909;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+}
+				
+nav .iksweb:hover {
+  background:#ff0000;
+  color:#ffffff;
+  border: 2px solid #ffffff;
+  transition: all 0.2s ease;
+  transform: translateY(0px);
+}
+				
+
 nav .logo {
   color: red;
   padding: 16px;
