@@ -35,12 +35,12 @@ section#blog .project {
 }
 
 section#blog .project:hover {
-	background-color: #f0f0f0;
+	background-color: #414141;
 	transform: scale(1.05);
 }
 
 section#blog .project img {
-	border-radius: 5px;
+	border-radius: 10px;
 	max-width: 100%;
 }
 

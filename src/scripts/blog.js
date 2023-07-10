@@ -1,38 +1,32 @@
 const projects = [
 	{
 		nr: '001',
-		name: 'Новый выпуск нашего подкаста sudo podcast',
-		link: 'https://codepen.io/FlorinPop17/full/gOYZxyE',
-		path: 'src/images/blogs/'
-	},
-	{
-		nr: '001',
-		name: 'Кейс департамента культуры. Приложение "VisitTobolsk"',
-		link: 'https://vk.com/kvanttob?w=wall-187862365_5853',
+		name: 'Глобальный релиз «Нейромантиков». Пристегнитесь!',
+		link: 'https://vk.com/neuromantics',
 		path: 'src/images/blogs/'
 	},
 	{
 		nr: '002',
-		name: 'Нейромантики призеры FOSS',
-		link: 'https://vk.com/kvanttob?w=wall-187862365_5853',
+		name: 'Кейс для департамента культуры. Приложение «VisitTobolsk»',
+		link: 'https://www.rustore.ru/',
 		path: 'src/images/blogs/'
 	},
 	{
 		nr: '003',
-		name: 'Double Noise Flow Field',
-		link: 'https://codepen.io/FlorinPop17/full/GRKwmgK',
+		name: 'Нейромантики призеры «Всероссийского конкурса open source проектов»',
+		link: 'https://vk.com/kvanttob?w=wall-187862365_5853',
 		path: 'src/images/blogs/'
 	},
 	{
 		nr: '004',
-		name: 'Catch the insect',
-		link: 'https://codepen.io/FlorinPop17/full/NWKELoq',
+		name: 'Нейромантики победители фестиваля «Технострелка»!',
+		link: 'https://vk.com/kvanttob?w=wall-187862365_5839',
 		path: 'src/images/blogs/'
 	},
 	{
 		nr: '005',
-		name: 'User Profile Design',
-		link: 'https://codepen.io/FlorinPop17/full/QWLzdrV',
+		name: 'Кейс для министерства спорта Нижнего Новгорода. Приложение «Здоровяш»',
+		link: 'https://github.com/belochka200/zdorovyash',
 		path: 'src/images/blogs/'
 	},
 	
