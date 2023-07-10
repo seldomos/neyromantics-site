@@ -1,47 +1,53 @@
 const projects = [
 	{
 		nr: '001',
-		name: 'Random Meal Generator',
-		link: 'https://codepen.io/FlorinPop17/full/WNeggor'
+		name: 'Новый выпуск нашего подкаста sudo podcast',
+		link: 'https://codepen.io/FlorinPop17/full/gOYZxyE',
+		path: 'src/images/blogs/'
+	},
+	{
+		nr: '001',
+		name: 'Кейс департамента культуры. Приложение "VisitTobolsk"',
+		link: 'https://vk.com/kvanttob?w=wall-187862365_5853',
+		path: 'src/images/blogs/'
 	},
 	{
 		nr: '002',
-		name: '2019 Mood Calendar',
-		link: 'https://codepen.io/FlorinPop17/full/eYOPdER'
+		name: 'Нейромантики призеры FOSS',
+		link: 'https://vk.com/kvanttob?w=wall-187862365_5853',
+		path: 'src/images/blogs/'
 	},
 	{
 		nr: '003',
 		name: 'Double Noise Flow Field',
-		link: 'https://codepen.io/FlorinPop17/full/GRKwmgK'
+		link: 'https://codepen.io/FlorinPop17/full/GRKwmgK',
+		path: 'src/images/blogs/'
 	},
 	{
 		nr: '004',
 		name: 'Catch the insect',
-		link: 'https://codepen.io/FlorinPop17/full/NWKELoq'
+		link: 'https://codepen.io/FlorinPop17/full/NWKELoq',
+		path: 'src/images/blogs/'
 	},
 	{
 		nr: '005',
 		name: 'User Profile Design',
-		link: 'https://codepen.io/FlorinPop17/full/QWLzdrV'
-	},
-	{
-		nr: '006',
-		name: 'Pokedex',
-		link: 'https://codepen.io/FlorinPop17/full/gOYZxyE'
+		link: 'https://codepen.io/FlorinPop17/full/QWLzdrV',
+		path: 'src/images/blogs/'
 	},
 	
 ];
 
 const app = document.getElementById('app');
-const imgBaseURL = 'https://www.florin-pop.com/images/100Days100PRojects/Day ';
+const imgBaseURL = '';
 
 projects.forEach(project => {
-	const title = `${project.name} - #${project.nr}`;
-	const imgURL = imgBaseURL + project.nr + '.jpg';
+	const title = `${project.name}`;
+	const imgURL = imgBaseURL + project.path +project.nr + '.jpg';
 	
 	const projectEl = document.createElement('a');
 	projectEl.classList.add('project');
-	projectEl.href = project.link;
+	projectEl.href = project.path;
 	projectEl.target = '_blank';
 
 	projectEl.innerHTML = `
