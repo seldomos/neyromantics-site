@@ -16,12 +16,16 @@
 <body>
 	<section id="welcome">
         <nav>
-            <a href="#welcome" class="logo">нейромантики</a>
-            <a href="#achivements">достижения</a>
-            <a href="#cases">кейсы</a>
-            <a href="#team">команда</a>
-            <a href="#blog">блог</a>
-			<a class="iksweb" href="#footer" title="Написать нам">Написать нам</a>
+			<div class="wrap">
+				<div class="menu-links">
+					<a href="#welcome" class="logo">нейромантики</a>
+					<a href="#achivements">достижения</a>
+					<a href="#cases">кейсы</a>
+					<a href="#team">команда</a>
+					<a href="#blog">блог</a>
+				</div>
+				<a class="iksweb" href="#footer" title="Написать нам">написать нам</a>
+			</div>
         </nav>
         <div class="heading">
             <span style="--time: .3s">н</span>
@@ -51,28 +55,29 @@
 		<img src="src/images/arrowh.png" width="64" style="position: absolute; bottom: 64px; animation: arrow-down 2s ease-in-out infinite; animation-delay: 2s;"/>
 	</section>
 	<section id="info">
-		<h1 class="block-effect" style="--td: 1.2s">
-			<div class="block-reveal" style="--bc: #ff0000; --d: .1s">Делаем <u style="text-decoration-color: #ff0000;">лучше</u>,</div>
-			<div class="block-reveal" style="--bc: #ff0000; --d: .5s">Делаем <u style="text-decoration-color: #ff0000;">круче</u></div>
-		  </h1>
-		  
-		  <div class="info">
-			<p>Мы — команда молодых и суровых айтишников из холодной 
-			сибирской глубинки, но с очень горячим сердцем и кривой осанкой.</p>
-			<pre class="morph-section"></pre>
-			
-			<p style="margin-top: 20px;">Мы профессионально реализовываем различные проекты в сфере IT.</p>
-			<p style="margin-top: 20px;">Мы умеем в:</p>
-			<ul>
-				<li>Консалтинг для вашего бизнеса</li>
-				<li>Импортозамещение инфраструктуры</li>
-				<li>Организация it-мероприятий</li>
-				<li>Разработка мобильных приложений</li>
-				<li>Создание сайтов</li>
-				<li>Техническая поддержка</li>
-			</ul>
-			<a class="iksweb" href="#footer" title="Написать нам" style="text-align: center;">Написать нам</a>
-		  </div>
+		<div class="wrap">
+			<div class="content">
+				<div>
+					<h1 class="block-effect" style="--td: 1.2s">
+						<div class="block-reveal" style="--bc: #ff0000; --d: .1s">Делаем <u style="text-decoration-color: #ff0000;">лучше</u>,</div>
+						<div class="block-reveal" style="--bc: #ff0000; --d: .5s">Делаем <u style="text-decoration-color: #ff0000;">круче</u></div>
+					</h1>
+					<p>Мы — команда молодых и суровых айтишников из холодной сибирской глубинки, но с очень горячим сердцем и кривой осанкой.</p>
+					<p>Мы профессионально реализовываем различные проекты в сфере IT.</p>
+					<p>Мы умеем в:</p>
+					<ul>
+						<li>Консалтинг для вашего бизнеса</li>
+						<li>Импортозамещение инфраструктуры</li>
+						<li>Организация it-мероприятий</li>
+						<li>Разработка мобильных приложений</li>
+						<li>Создание сайтов</li>
+						<li>Техническая поддержка</li>
+					</ul>
+					<a class="iksweb" href="#footer" title="Написать нам" style="text-align: center;">Написать нам</a>
+				</div>
+				<pre class="morph-section"></pre>
+			</div>
+		</div>
 	</section>
 	<section id="achivements">
 		<div class="row">
@@ -242,7 +247,8 @@
 	</section>
 	<section id="footer">
 		<h1 style="text-align: center;">НАПИСАТЬ НАМ</h1>
-		<center><script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script><iframe src="https://forms.yandex.ru/cloud/64a26b4d6938728366ad2869/?iframe=1" frameborder="0" name="ya-form-64a26b4d6938728366ad2869" width="550"></iframe></center>
+		<script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script>
+		<iframe src="https://forms.yandex.ru/cloud/64a26b4d6938728366ad2869/?iframe=1" frameborder="0" name="ya-form-64a26b4d6938728366ad2869" width="100%"></iframe>
 		<div class="social">
 			<a href="mailto:neuromantics.team@yandex.ru"><img src="src/images/icons8-circled_envelope.png" style="margin-right: 50px;"/></a>
 			<a href="https://vk.com/sudopodcast"><img src="src/images/icons8-vk_circled.png" style="margin-right: 50px;"/></a>
@@ -250,10 +256,9 @@
 		</div>
 		<footer class="footer">
 			<div class="legal">
-			  <p>&copy; 2023 г. Тобольск, IT-студия "Нейромантики", 626150</p> 
+				<p>&copy; 2023 г. Тобольск, IT-студия "Нейромантики", 626150</p> 
 			</div>
-		  </footer>
-	
+		</footer>
 	</section>
 
 	<script src="src/scripts/slider.js"></script>

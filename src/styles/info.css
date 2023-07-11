@@ -1,30 +1,33 @@
 /* reset */
 
 /* other */
-section#info .info {
-  margin: 20px 0;
-  text-align: left;
+section#info .wrap {
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-section#info .info p {
+section#info .wrap .content {
+  display: flex;
+}
+section#info p {
   color: #fff;
-  margin-left: 100px;
   font-size: x-large;
+  margin-top: 16px;
 }
 
-section#info .info ul {
-    margin-top: 20px;
-    color: #fff;
-    margin-left: 125px;
-    font-size: x-large;
-    font-family: 'Mulish';
-  }
+section#info ul {
+  color: #fff;
+  font-size: x-large;
+  font-family: 'Mulish';
+}
+
+section#info ul li {
+  color: #fff;
+  font-family: 'Mulish';
+}
 
 /* block-$ */
 section#info .block-effect {
   font-size: 64px;
-  
-  margin-left: 50px;
 }
 
 section#info .block-effect.block-reveal {
@@ -57,34 +60,6 @@ section#info .block-effect.block-reveal::after {
 section#info .morph-section {
   font-family: monospace;
   color: #fff;
-  position: absolute;
-  margin-left: 65%;
-}
-
-section#info .info .iksweb {
-  display: block;
-  margin-right: auto;
-  margin-left: 100px;
-  margin-top: 20px;
-  cursor: pointer; 
-  font-size: 24px;
-  text-decoration: none;
-  padding: 15px 20px; 
-  color: #ffffff;
-  background: #090909;
-  border-radius: 10px;
-  border: 2px solid #ff0000;
-  font-family: "Mulish", sans-serif;
-  width: 240px;
-  
-}
-                  
-section#info .info .iksweb:hover {
-  background:#ff0000;
-  color:#ffffff;
-  border: 2px solid #ffffff;
-  transition: all 0.2s ease;
-  transform: translateY(0px);
 }
 
 /* animations */
@@ -95,24 +70,29 @@ section#info .info .iksweb:hover {
 }
 
 @keyframes revealingIn {
-
   0% {
     width: 0;
   }
-
   100% {
     width: 100%;
   }
 }
 
 @keyframes revealingOut {
-
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(100%);
   }
+}
 
+@media only screen and (max-width: 768px) {
+  section#info .wrap .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  section#info .wrap {
+    margin: 16px;
+  }
 }
